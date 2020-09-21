@@ -1,0 +1,460 @@
+
+<!--Assignment 6 by Simeon Adewale-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Assignment_3 ">
+    <meta name="keywords" content="grid, flexbox, navigation">
+    <meta name="author" content="Simeon Adewale">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout_one</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive_design.css">
+
+    <link rel="import" href="soccer.html">
+    <link rel="import" href="football.html">
+    <link rel="import" href="contact.html">
+
+    <script src="https://kit.fontawesome.com/6e6e146e27.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+        <div id="content_intro">
+            <nav>
+                <div id="nav_bar">
+                    <div id="nav_logo">
+                        <a href="home.html">
+                            <span id="logo">logo</span>
+                        </a>
+                    </div>
+        
+                    <ul class="nav-links" id="nav-links">
+                        <li><a href="soccer.html"  class="soccer-link">Soccer</a>
+                            <ul class="nav-options nav-option1">
+                                <div class="nav-leagues">
+                                    <div class="leagues europe"><a href="#" data-filter="europe">European Teams</a></div>
+                                    <div class="leagues mls"><a href="#" data-filter="mls">Major League Soccer (MLS)</a></div>
+                                </div>
+                
+                                <div class="nav-league-image-container">
+                                    <div class="nav-league-image image1">
+                                        <img src="./img/soccer/European_teams/Soccer_ball.png" alt="football-image">
+                                    </div>
+                
+                                </div>
+                            </ul>
+                        </li>
+                        
+                        
+                        <li><a href="football.html"  class="football-link">Football</a>
+                            <ul class="nav-options nav-option2">
+                                <div class="nav-leagues">
+                                    <div class="leagues nfl"><a href="#" data-filter="nfl">National Football League (NFL)</a></div>
+                                    <div class="leagues ncaaf"><a href="#" data-filter="ncaaf">National Collegiate Athletic Association (NCAAF)</a></div>
+                                </div>
+                
+                                <div class="nav-league-image-container">
+                                    <div class="nav-league-image image2">
+                                        <img src="./img/football/football.png" alt="football-image">
+                                    </div>
+                
+                                </div>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html"  class="contact-link">Contact</a></li>
+                    </ul>
+                    <div class="mobile_menu">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                    
+                </div>
+            </nav>
+
+            
+
+            <div id="main_heading">
+                <section id="text">
+                    <h1>Liberate your passion</h1>
+                    <p>Watch games with other fans of your favorite team wherever you are. 
+                        Play the sport you are passionate about from any location, no matter your skill level, gender or age.</p>
+                    
+                    <div id="connect">connect<i class="fas fa-arrow-right"></i> </div>
+
+                </section>
+
+            </div>
+
+        </div>
+
+        <div id="content_grid_container"><!--grid container-->
+
+            <div class="content_flex_container"><!--flex container-->
+                
+                
+                <div class="content_1" id="watch_party"><!--box one-->
+
+                    <div class="form_container"><!--form container-->
+
+                        <div class="form_header">Watch Party</div>
+                        
+                        <div class="form-options">
+                        
+                            <div class="active pick-options option1">Find a Party</div>
+                            <div class="pick-options option2">Host a Party</div>
+                        </div>
+                        
+                        <div class="opt1_container" id="findAPartyContainer1"><!--find options-->
+                            <div class="form">
+                                <select name="pick" class="pick select">
+                                    
+                                    <optgroup>
+                                        <option value="select_sport" class="faint">Select Sport</option>
+                                        <option value="soccer">Soccer</option>
+                                        <option value="football">Football</option>
+                                    </optgroup>
+                                </select>    
+                            </div>
+                            <div class="form">   
+                                <select name="pick" class="pick select">
+                                    
+                                    <optgroup label="European teams">
+                                        <option value="select_team" class="faint">Select a team</option>
+                                        <option value="Milan">Ac Milan</option>
+                                        <option value="Arsenal">Arsenal</option>
+                                        <option value="Atletico">Atletico Madrid</option>
+                                        <option value="Barcelona">Barcelona</option>
+                                        <option value="Bayern">Bayern Munich</option>
+                                        <option value="Dortmund">Borussia Dortmund</option>
+                                        <option value="Chelsea">Chelsea</option>
+                                        <option value="Inter">Inter Milan</option>
+                                        <option value="Juventus">Juventus</option>
+                                        <option value="Liverpool">Liverpool</option>
+                                        <option value="man_city">Manchester city</option>
+                                        <option value="man_united">Manchester united</option>
+                                        <option value="Napoli">Napoli</option>
+                                        <option value="Madrid">Real Madrid</option>
+                                        <option value="Tottenham">Tottenham</option>
+                                    </optgroup>                         
+                                    
+                                    <optgroup label="Major league Soccer (MLS)">
+                                        <option value="Atlanta">Atlanta United FC</option>
+                                        <option value="Chicago">Chicago Fire</option>
+                                        <option value="Colorado">Colorado Rapids</option>
+                                        <option value="Columbus">Columbus Crew SC</option>
+                                        <option value="dc">D.C. United</option>
+                                        <option value="Cincinnati">FC Cincinnati</option>
+                                        <option value="Dallas">FC Dallas</option>
+                                        <option value="Houston">Houston Dynamo</option>
+                                        <option value="Miami">Inter Miami CF</option>
+                                        <option value="Galaxy">LA Galaxy</option>
+                                        <option value="LAFC">Los Angeles FC</option>
+                                        <option value="Minnesota">Minnesota United FC</option>
+                                        <option value="Montreal">Montreal Impact</option>
+                                        <option value="New_England">New England Revolution</option>
+                                        <option value="New York">New York City FC</option>
+                                        <option value="Red_bulls">New York Red Bulls</option>
+                                        <option value="Orlando">Orlando City SC</option>
+                                        <option value="Philadelphia">Philadelphia Union</option>
+                                        <option value="Portland">Portland Timbers</option>
+                                        <option value="Salt_lake">Real Salt Lake</option>
+                                        <option value="Earthquakes">San Jose Earthquakes</option>
+                                        <option value="Seattle">Seattle Sounders FC</option>
+                                        <option value="Kansas">Sporting Kansas City</option>
+                                        <option value="Toronto">Toronto FC</option>
+                                        <option value="Whitecaps">Vancouver Whitecaps FC</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="form">
+                                <input type="date" id="date" class="pick select" placeholder="Enter Your Location">
+                            </div>
+                            
+
+                            <div class="form">
+                                <input type="text" class="zip pick select" placeholder="Enter Your Zipcode">
+                            </div>
+                            <div class="location"><a href="#"><img src="img/location.png" alt="location_icon">Current location</a></div>          
+                            
+                            <div id="button">
+                                <input type="submit" class="btn" value="Find">
+                            </div>                   
+                        
+                        </div>
+
+                        
+                        <div class="opt2_container" id="hostAPartyContainer1" hidden><!--post options-->
+                            
+                            <div class="form">
+                                <select name="pick" class="pick select">
+                                    <option value="select_sport" class="faint">Select Sport</option>
+                                    <optgroup>
+                                        <option value="soccer">Soccer</option>
+                                        <option value="football">Football</option>
+                                    </optgroup>
+                                </select>    
+                            </div>
+
+                            <div class="form">   
+                                <select name="pick" class="pick select">
+                                    
+                                    <optgroup label="European teams">
+                                        <option value="select_team" class="faint">Select a team</option>
+                                        <option value="Milan">Ac Milan</option>
+                                        <option value="Arsenal">Arsenal</option>
+                                        <option value="Atletico">Atletico Madrid</option>
+                                        <option value="Barcelona">Barcelona</option>
+                                        <option value="Bayern">Bayern Munich</option>
+                                        <option value="Dortmund">Borussia Dortmund</option>
+                                        <option value="Chelsea">Chelsea</option>
+                                        <option value="Inter">Inter Milan</option>
+                                        <option value="Juventus">Juventus</option>
+                                        <option value="Liverpool">Liverpool</option>
+                                        <option value="man_city">Manchester city</option>
+                                        <option value="man_united">Manchester united</option>
+                                        <option value="Napoli">Napoli</option>
+                                        <option value="Madrid">Real Madrid</option>
+                                        <option value="Tottenham">Tottenham</option>
+                                    </optgroup>
+                            
+                                    
+                                    
+                                    <optgroup label="Major league Soccer (MLS)">
+                                        <option value="Atlanta">Atlanta United FC</option>
+                                        <option value="Chicago">Chicago Fire</option>
+                                        <option value="Colorado">Colorado Rapids</option>
+                                        <option value="Columbus">Columbus Crew SC</option>
+                                        <option value="dc">D.C. United</option>
+                                        <option value="Cincinnati">FC Cincinnati</option>
+                                        <option value="Dallas">FC Dallas</option>
+                                        <option value="Houston">Houston Dynamo</option>
+                                        <option value="Miami">Inter Miami CF</option>
+                                        <option value="Galaxy">LA Galaxy</option>
+                                        <option value="LAFC">Los Angeles FC</option>
+                                        <option value="Minnesota">Minnesota United FC</option>
+                                        <option value="Montreal">Montreal Impact</option>
+                                        <option value="New_England">New England Revolution</option>
+                                        <option value="New York">New York City FC</option>
+                                        <option value="Red_bulls">New York Red Bulls</option>
+                                        <option value="Orlando">Orlando City SC</option>
+                                        <option value="Philadelphia">Philadelphia Union</option>
+                                        <option value="Portland">Portland Timbers</option>
+                                        <option value="Salt_lake">Real Salt Lake</option>
+                                        <option value="Earthquakes">San Jose Earthquakes</option>
+                                        <option value="Seattle">Seattle Sounders FC</option>
+                                        <option value="Kansas">Sporting Kansas City</option>
+                                        <option value="Toronto">Toronto FC</option>
+                                        <option value="Whitecaps">Vancouver Whitecaps FC</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            
+                            
+                            <div class="form">
+                                <input type="text" id="zip" class="pick select" placeholder="Enter Your Location">
+                            </div>
+                            <div class="location"><a href="#"><img src="img/location.png" alt="location_icon">Current location</a></div>           
+                            
+                            <div class="button">
+                                <input type="submit" class="btn btn_post"  value="Host">
+                            </div>
+
+                        </div>
+                    </div>                   
+
+                    
+                    
+                    <div class="content_note"></div>
+                </div>
+                
+                <div class="content_2" id="latest_scores"><!--box two-->
+                    <div class="side">Latest Scores</div>
+                </div>
+                
+                
+                <div class="content_1" id="game_center"><!--box three-->
+
+                    <div class="form_container"><!--form two container-->
+
+                        <div class="form_header">Pick up Games</div><!--form header-->
+                        
+                        <div class="form-options">
+                        
+                            <div class="active pick-options option3" data-option="option3">Find a game</div>
+                            <div class="pick-options option4" data-option="option4">Host a game</div>
+                        </div>
+                        
+                            <!--making the form-->
+                        <div class="opt1_container" id="findAPartyContainer2"><!--pick options-->
+                            <div class="form">
+                                <select name="pick" class="pick select">
+                                    
+                                    <optgroup>
+                                        <option value="select_sport" class="faint">Select Sport</option>
+                                        <option value="soccer">Soccer</option>
+                                        <option value="football">Football</option>
+                                    </optgroup>
+                                </select>    
+                            </div>
+                            <div class="form">   
+                                <select name="pick" class="pick select">
+                                    
+                                    <optgroup>
+                                        <option value="" class="faint">Skill Level</option>
+                                        <option value="">Beginner</option>
+                                        <option value="">Intermediate</option>
+                                        <option value="">Advanced</option>
+                                    </optgroup>    
+                                </select>
+                            </div>
+                            <div class="form">
+                                <select name="pick" class="pick select">
+                                    
+                                    <optgroup>
+                                        <option value="age" class="faint">Age</option>
+                                        <option value="under_9">under_9</option>                                    
+                                        <option value="under_12">under_12</option>                                    
+                                        <option value="under_15">under_15</option>                                    
+                                        <option value="under_18">under_18</option>                                    
+                                        <option value="under_23">under_23</option>
+                                        <option value="Adult">Adult</option>
+                                    </optgroup>    
+                                </select>
+                            </div>
+                            <div class="form">
+                                <select name="pick" class="pick select">
+                                    
+                                    <optgroup>
+                                        <option value="type_of_game" class="faint">Type Of Game</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="Mixed">Mixed</option>
+                                    </optgroup>    
+                                </select>
+                            </div>
+
+                            <div class="form">
+                                <input type="digit" id="zip" class="pick select" placeholder="Enter Your Zipcode">
+                            </div>
+                            <div class="location"><a href="#"><img src="img/location.png" alt="location_icon">Current location</a></div>          
+                            
+                            <div class="button">
+                                <input type="submit" class="btn btn_primary" value="Find">
+                            </div>                   
+                        
+                        </div>
+
+                        <div class="opt2_container" id="hostAPartyContainer2" hidden><!--post options-->
+                            
+                            <div class="form">
+                                <select name="pick" class="pick select">
+                                    <option value="" class="faint">Select Sport</option>
+                                    <optgroup>
+                                        <option value="soccer">Soccer</option>
+                                        <option value="football">Football</option>
+                                    </optgroup>
+                                </select>    
+                            </div>
+                            <div class="form">   
+                                <select name="pick" class="pick select">
+                                    
+                                    <optgroup>
+                                        <option value="" class="faint">Skill Level</option>
+                                        <option value="">Beginner</option>
+                                        <option value="">Intermediate</option>
+                                        <option value="">Advanced</option>
+                                    </optgroup>    
+                                </select>
+                            </div>
+                            <div class="form">
+                                <select name="pick" class="pick select">
+                                    
+                                    <optgroup>
+                                        <option value="" class="faint">Age</option>
+                                        <option value="">under_3</option>
+                                        <option value="">under_6</option>                                    
+                                        <option value="">under_9</option>                                    
+                                        <option value="">under_12</option>                                    
+                                        <option value="">under_15</option>                                    
+                                        <option value="">under_18</option>                                    
+                                        <option value="">under_23</option>
+                                        <option value="">Adults</option>
+                                    </optgroup>    
+                                </select>
+                            </div>
+                            <div class="form">
+                                <input type="number" class="zip pick select" placeholder="Enter Your Zipcode">
+                            </div>
+                            <div class ="location"><a href="#"><img src="img/location.png" alt="location_icon">Current location</a></div>           
+                            
+                            <div class="button">
+                                <input type="submit" class="btn btn_primary btn_post" value="Host">
+                            </div>
+
+                        </div>        
+                    
+                    
+                    
+                    
+                    </div>
+                    
+                    <div class="content_note"></div>
+
+                </div>
+                
+                <div class="content_2" id="recent_events"><!--box four-->
+                    <div class="side">Recent Events</div>
+                </div>
+
+            </div>
+            
+            
+
+        </div>
+        
+
+        <div id="footer_container">
+            <div id="footer_flex_container">
+                <div class="footer"><a href="#">Sport teams</a></div>
+                <div class="footer"><a href="#">Sport Fans</a></div>
+                <div class="footer"><a href="#">Accessibility</a></div>
+            </div>
+            <div id="footer_icons">
+                
+                <div class="footer-icons">
+                    <a href="#">
+                        <img src="img/icons/facebook.png" alt="facebook_icon">
+                    </a>
+                </div>
+                
+                <div class="footer-icons">
+                    <a href="#">
+                        <img src="img/icons/instagram.png" alt="instagram_icon">
+                    </a>
+                </div>
+                
+                <div class="footer-icons">
+                    <a href="#">
+                        <img src="img/icons/linkedIn.png" alt="linkedIn_icon">
+                    </a>
+                </div>
+                
+                <div class="footer-icons">
+                    <a href="#">
+                        <img src="img/icons/twitter.png" alt="twitter_icon">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    <script src="js/home.js"></script> 
+</body>
+</html>

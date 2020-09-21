@@ -1,0 +1,950 @@
+
+<!--Assignment 4 by Simeon Adewale-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Assignment_3 ">
+        <meta name="keywords" content="grid, flexbox, navigation">
+        <meta name="author" content="Simeon Adewale">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>layout_one</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/body.css">
+        <link rel="stylesheet" href="css/responsive_design.css">
+
+        <link rel="import" href="soccer.html">
+        <link rel="import" href="football.html">
+        <link rel="import" href="contact.html">
+
+        
+
+    </head>
+    <body>
+    
+        <nav>
+            <div id="nav_bar">
+                <div id="nav_logo">
+                    <a href="home.html">
+                        <span id="logo">logo</span>
+                    </a>
+                </div>
+    
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="soccer.html"  class="soccer-link">Soccer</a>
+                        <ul class="nav-options nav-option1">
+                            <div class="nav-leagues">
+                                <div class="leagues europe"><a href="#" data-filter="europe">European Teams</a></div>
+                                <div class="leagues mls"><a href="#" data-filter="mls">Major League Soccer (MLS)</a></div>
+                            </div>
+            
+                            <div class="nav-league-image-container">
+                                <div class="nav-league-image image1">
+                                    <img src="./img/soccer/European_teams/Soccer_ball.png" alt="football-image">
+                                </div>
+            
+                            </div>
+                        </ul>
+                    </li>
+                    
+                    
+                    <li><a href="football.html"  class="football-link">Football</a>
+                        <ul class="nav-options nav-option2">
+                            <div class="nav-leagues">
+                                <div class="leagues nfl"><a href="#" data-filter="nfl">National Football League (NFL)</a></div>
+                                <div class="leagues ncaaf"><a href="#" data-filter="ncaaf">National Collegiate Athletic Association (NCAAF)</a></div>
+                            </div>
+            
+                            <div class="nav-league-image-container">
+                                <div class="nav-league-image image2">
+                                    <img src="./img/football/football.png" alt="football-image">
+                                </div>
+            
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html"  class="contact-link">Contact</a></li>
+                </ul>
+                <div class="mobile_menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                
+            </div>
+        </nav>
+            <div id="teams">
+                <section id="teams_head">
+                    <div class="ball bounce" id="soccer_image">
+                        <img src="img/soccer/European_teams/Soccer_ball.png" alt="soccer ball image">
+                    </div>
+                    <h1 id="sport">Soccer</h1>                    
+                    <div class="active league_options" id="european">European teams</div>
+                    <div class="league_options" id="mls">MLS</div>
+                </section>
+
+                <!--beginning of the european teams section-->
+                <div id="european_teams_container">
+                    <section><h2 id="europe_heading">European teams</h2></section>
+                    <div class="teams_flex_container teams_mobile_container">
+                        
+                        <!--European teams-->
+                        <div class="teams_container european_left" id="left_side">
+                            <div class="team_items european_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/European_teams/AC_Milan.png" alt="Ac_milan_logo">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">AC Milan</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+
+                            <div class="team_items european_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/European_teams/arsenal_logo.svg" alt="Arsenal_logo">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">Arsenal</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+
+                            <div class="team_items european_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/European_teams/Atletico_Madrid.png" alt="Arsenal_logo">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">Atletico Madrid</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                             
+                            </div>
+
+                            <div class="team_items european_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/European_teams/FC_Barcelona.png" alt="barcelona_logo">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">Barcelona</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                    
+                            </div>
+
+                            <div class="team_items european_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/European_teams/FC_Bayern_München.png" alt="bayern_munich">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">Bayern Munich</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                
+                            </div>
+
+                            <div class="team_items european_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/European_teams/Borussia_Dortmund.png" alt="dortmund_logo">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">Borussia Dortmund</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="team_items european_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/European_teams/Chelsea_FC.png" alt="chelsea_logo">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">Chelsea</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="team_items european_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/European_teams/FC_Internazionale_Milano.png" alt="inter_milan_logo">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">Inter Milan</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="teams_container european_right" id="right_side">
+
+                            <div class="team_items european_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/European_teams/Juventus_FC.png" alt="juventus_logo">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">Juventus</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="team_items european_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/European_teams/Liverpool_FC.png" alt="liverpool_logo">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">Liverpool</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                                
+
+
+
+
+
+
+                            </div>
+
+                            <div class="team_items european_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/European_teams/Manchester_City_FC.png" alt="man_city_logo">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">Manchester City</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                                
+
+
+
+
+
+
+                            </div>
+
+                            <div class="team_items european_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/European_teams/Manchester_United_FC.png" alt="man_united_logo">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">Manchester United</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                                
+
+
+
+
+
+
+                            </div>
+
+                            <div class="team_items european_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/European_teams/Napoli.png" alt="napoli_logo">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">Napoli</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                                
+
+
+
+
+
+
+                            </div>
+
+                            <div class="team_items european_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/European_teams/Real_Madrid_CF.png" alt="real_madrid_logo">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">Real Madrid</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                                
+
+
+
+
+
+
+                            </div>
+
+                            <div class="team_items european_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/European_teams/Tottenham_Hotspur.png" alt="tottenham_logo">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">Tottenham Hotspur</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                                
+
+
+
+
+
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <!---End of the section-->
+
+                
+                
+                <!--MLS section-->
+                <div id="mls_teams_container" style="display: none;">
+                    <section><h2 id="soccer_league">MLS teams</h2></section>
+                    <div class="teams_flex_container teams_mobile_container">
+
+                        <div class="teams_container mls_left" id="left_side">
+                        
+                            <div class="team_items mls_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/mls/Atlanta_MLS.png" alt="Atlanta_united">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">Atlanta United F.C</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="team_items mls_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/mls/Chicago_Fire_FC.png" alt="Chicago_Fire_FC">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">Chicago Fire F.C</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+
+                            <div class="team_items mls_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/mls/Colorado_Rapids.png" alt="Colorado_Rapids logo">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">Colorado Rapids</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="team_items mls_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/mls/Columbus_Crew_SC.png" alt="Columbus_Crew_SC">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">Columbus Crew SC</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="team_items mls_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/mls/D.C._United_logo.png" alt="D.C. United">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">D.C. United</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+
+                            <div class="team_items mls_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/mls/FC_Cincinnati.png" alt="FC_Cincinnati">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">FC Cincinnati</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="team_items mls_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/mls/FC_Dallas_logo.png" alt="FC_Dallas_logo">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">FC Dallas</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="team_items mls_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/mls/Houston_Dynamo.png" alt="Houston_Dynamo">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">Houston Dynamo</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        
+                            <div class="team_items mls_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/mls/Inter_Miami_CF.png" alt="Inter_Miami_CF">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">Inter Miami CF</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="team_items mls_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/mls/Los_Angeles_Galaxy.png" alt="LA_galaxy">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">LA Galaxy</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="team_items mls_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/mls/Los_Angeles_Football_Club.png" alt="Los_Angeles_Football_Club">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">Los Angeles FC</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        
+                            <div class="team_items mls_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/mls/Minnesota_United_FC.png" alt="Minnesota_United_FC">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">Minnesota United FC</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="team_items mls_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/mls/Montreal_Impact.png" alt="Montreal_Impact">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">Montreal Impact</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        
+                        </div>    
+ 
+                        
+                        <div class="teams_container mls_right" id="right_side">
+
+                            <div class="team_items mls_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/mls/New_England_Revolution.png" alt="New_England_Revolution">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">New England Revolution</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="team_items mls_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/mls/New_York_City_FC.png" alt="New_York_City_FC">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">New York City FC</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="team_items mls_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/mls/New_York_Red_Bulls.png" alt="New_York_Red_Bulls">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">New York Red Bulls</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                
+                            </div>
+
+                            <div class="team_items mls_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/mls/Orlando_City.png" alt="Orlando_City_SC">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">Orlando CitySC</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="team_items mls_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/mls/Philadelphia_Union.png" alt="Philadelphia_Union">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">Philadelphia Union</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                                
+
+
+
+
+
+
+                            </div>
+
+                            <div class="team_items mls_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/mls/Portland_Timbers.png" alt="Portland_Timbers">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">Portland Timbers</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                                
+
+
+
+
+
+
+                            </div>
+
+                            <div class="team_items mls_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/mls/Real_Salt_Lake.png" alt="Real_Salt_Lake">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">Real Salt Lake</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                                
+
+
+
+
+
+
+                            </div>
+
+                            <div class="team_items mls_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/mls/san_Jose_Earthquakes.png" alt="san_Jose_Earthquakes">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">San Jose Earthquakes</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="team_items mls_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/mls/Real_Salt_Lake.png" alt="Real_Salt_Lake">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">Real Salt Lake</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="team_items mls_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/mls/Seattle_Sounders_FC.png" alt="Seattle_Sounders_FC">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">Seattle Sounders FC</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="team_items mls_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/mls/Sporting_Kansas_City.png" alt="Sporting_Kansas_City">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">Sporting Kansas City</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="team_items mls_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/mls/Toronto_FC_Logo.png" alt="Toronto_FC_Logo">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">Toronto FC</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="team_items mls_teams">
+                                <div class="teams_logo">
+                                    <a href="#">
+                                        <img src="img/soccer/mls/Vancouver_Whitecaps_FC_logo.png" alt="Vancouver_Whitecaps_FC">
+                                    </a>
+                                </div>
+
+                                <div class="teams_property">
+                                    <div class="club_name"><a href="#">Vancouver Whitecaps FC</a></div>
+                                    <div class="club_standings">
+                                        <div class="fixtures"><a href="#">Fixtures</a></div>
+                                        <div class="results"><a href="#">Results</a></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <!---End of the section-->
+
+            </div>
+
+
+            
+            <div id="footer_container">
+                <div id="footer_flex_container">
+                    <div class="footer"><a href="#">Sport teams</a></div>
+                    <div class="footer"><a href="#">Sport Fans</a></div>
+                    <div class="footer"><a href="#">Accessibility</a></div>
+                </div>
+                <div id="footer_icons">
+                    
+                    <div class="footer-icons">
+                        <a href="#">
+                            <img src="img/icons/facebook.png" alt="facebook_icon">
+                        </a>
+                    </div>
+                    
+                    <div class="footer-icons">
+                        <a href="#">
+                            <img src="img/icons/instagram.png" alt="instagram_icon">
+                        </a>
+                    </div>
+                    
+                    <div class="footer-icons">
+                        <a href="#">
+                            <img src="img/icons/linkedIn.png" alt="linkedIn_icon">
+                        </a>
+                    </div>
+                    
+                    <div class="footer-icons">
+                        <a href="#">
+                            <img src="img/icons/twitter.png" alt="twitter_icon">
+                        </a>
+                    </div>
+                </div>
+    
+            </div>
+            
+            <script src="js/soccer.js">
+            
+            </script>
+        
+    </body>
+</html>

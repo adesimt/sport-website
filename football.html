@@ -1,0 +1,3209 @@
+
+<!--Assignment 4 by Simeon Adewale-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Assignment_3 ">
+        <meta name="keywords" content="grid, flexbox, navigation">
+        <meta name="author" content="Simeon Adewale">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>layout_one</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/body.css">
+        <link rel="stylesheet" href="css/responsive_design.css">
+
+        <link rel="import" href="soccer.html">
+        <link rel="import" href="football.html">
+        <link rel="import" href="contact.html">
+
+    </head>
+    <body>
+
+
+        <nav>
+            <div id="nav_bar">
+                <div id="nav_logo">
+                    <a href="home.html">
+                        <span id="logo">logo</span>
+                    </a>
+                </div>
+    
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="soccer.html"  class="soccer-link">Soccer</a>
+                        <ul class="nav-options nav-option1">
+                            <div class="nav-leagues">
+                                <div class="leagues europe"><a href="#" data-filter="europe">European Teams</a></div>
+                                <div class="leagues mls"><a href="#" data-filter="mls">Major League Soccer (MLS)</a></div>
+                            </div>
+            
+                            <div class="nav-league-image-container">
+                                <div class="nav-league-image image1">
+                                    <img src="./img/soccer/European_teams/Soccer_ball.png" alt="football-image">
+                                </div>
+            
+                            </div>
+                        </ul>
+                    </li>
+                    
+                    
+                    <li><a href="football.html"  class="football-link">Football</a>
+                        <ul class="nav-options nav-option2">
+                            <div class="nav-leagues">
+                                <div class="leagues nfl"><a href="#" data-filter="nfl">National Football League (NFL)</a></div>
+                                <div class="leagues ncaaf"><a href="#" data-filter="ncaaf">National Collegiate Athletic Association (NCAAF)</a></div>
+                            </div>
+            
+                            <div class="nav-league-image-container">
+                                <div class="nav-league-image image2">
+                                    <img src="./img/football/football.png" alt="football-image">
+                                </div>
+            
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html"  class="contact-link">Contact</a></li>
+                </ul>
+                <div class="mobile_menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                
+            </div>
+        </nav>
+            
+            <div id="teams">
+
+                <section id="teams_head">
+                    <div id="soccer_image">
+                        <img src="img/football/football.png" alt="football-image">
+                    </div>
+                    <h1 id="sport">Football</h1>
+                    <div class="league_options active" id="league_options1">NFL</div>
+                    <div class="league_options" id="league_options2">NCAAF</div>                    
+                </section>
+
+                <div id="nfl_teams_container">
+                    <section><h2 id="league">NFL teams</h2></section>
+                    <div class="teams_flex_container teams_mobile_container">
+
+                        <div class="teams_container" id="left_side">
+                            
+                            <!--afc west-->
+                            <section>
+                                <div class="conference"><h3>AFC West</h3></div>
+                                
+                                <div id="afc_west">
+                                    <div class="team_items nfl_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/Denver-Broncos.png" alt="Denver-Broncos">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Denver Broncos</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items nfl_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/Kansas-City-Chiefs.png" alt="Kansas-City-Chiefs">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Kansas City Chiefs</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items nfl_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/las_vegas_raiders.png" alt="las_vegas_raiders" width="30">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Las Vegas Raiders</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                    </div>
+
+                                    <div class="team_items nfl_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/Los-Angeles-Chargers.png" alt="Los-Angeles-Chargers">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Los Angeles Chargers</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </section>
+
+
+                            <!--Afc east-->
+                            <section>
+                                <div class="conference"><h3>AFC East</h3></div>                                 
+                                
+                                    <div id="afc_east">
+                                        <div class="team_items nfl_teams">
+                                            <div class="teams_logo2">
+                                                <a href="#">
+                                                    <img src="img/football/Buffalo-Bills-Logo.png" alt="buffalo-bills">
+                                                </a>
+                                            </div>
+
+                                            <div class="teams_property">
+                                                <div class="club_name"><a href="#">Buffalo Bills</a></div>
+                                                <div class="club_standings">
+                                                    <div class="fixtures"><a href="#">Schedule</a></div>
+                                                    <div class="results"><a href="#">Results</a></div>
+                                                </div>
+                                            </div>
+                                        
+                                        </div>
+
+                                        <div class="team_items nfl_teams">
+                                            <div class="teams_logo2">
+                                                <a href="#">
+                                                    <img src="img/football/Miami-Dolphins.png" alt="miami-dolphins">
+                                                </a>
+                                            </div>
+
+                                            <div class="teams_property">
+                                                <div class="club_name"><a href="#">Miami Dolphins</a></div>
+                                                <div class="club_standings">
+                                                    <div class="fixtures"><a href="#">Schedule</a></div>
+                                                    <div class="results"><a href="#">Results</a></div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+
+                                        <div class="team_items nfl_teams">
+                                            <div class="teams_logo2">
+                                                <a href="#">
+                                                    <img src="img/football/New-England-Patriots-logo.png" alt="New_England">
+                                                </a>
+                                            </div>
+
+                                            <div class="teams_property">
+                                                <div class="club_name"><a href="#">New England Patriots</a></div>
+                                                <div class="club_standings">
+                                                    <div class="fixtures"><a href="#">Schedule</a></div>
+                                                    <div class="results"><a href="#">Results</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="team_items nfl_teams">
+                                            <div class="teams_logo2">
+                                                <a href="#">
+                                                    <img src="img/football/New-York-Jets-logo.png" alt="New-york-jets">
+                                                </a>
+                                            </div>
+
+                                            <div class="teams_property">
+                                                <div class="club_name"><a href="#">New York Jets</a></div>
+                                                <div class="club_standings">
+                                                    <div class="fixtures"><a href="#">Schedule</a></div>
+                                                    <div class="results"><a href="#">Results</a></div>
+                                                </div>
+                                            </div>
+                                            
+                                    
+                                    
+                                        </div>
+
+                                    </div>
+                            </section>
+                            
+                            <!--Afc North-->
+                            <section>
+                                <div class="conference"><h3>AFC North</h3></div>
+                                
+                                <div id="afc_north">
+                                    <div class="team_items nfl_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/Baltimore-Ravens.png" alt="Baltimore-Ravens">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Baltimore Ravens</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="team_items nfl_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/Cincinnati-Bengals.png" alt="Cincinnati-Bengals">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Cincinnati Bengals</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <div class="team_items nfl_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/Cleveland-Browns.png" alt="Cleveland-Browns">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Cleveland Browns</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                
+                                    <div class="team_items nfl_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/Pittsburgh-Steelers.png" alt="Pittsburgh-Steelers">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Pittsburgh-Steelers</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                
+                                </div>
+
+                            </section>
+
+                            <!--Afc South-->
+                            <section>
+                                <div class="conference"><h3>AFC South</h3></div>
+                                
+                                <div id="afc_south">
+                                    <div class="team_items nfl_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/Houston-Texans.png" alt="Houston-Texans">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Houston Texans</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="team_items nfl_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/Indianapolis-Colts.png" alt="Indianapolis-Colts">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Indianapolis Colts</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <div class="team_items nfl_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/Jacksonville-Jaguars.png" alt="Jacksonville-Jaguars">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Jacksonville Jaguars</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                
+                                    <div class="team_items nfl_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/Tennessee-Titans.png" alt="Tennessee-Titans">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Tennessee Titans</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                </div>
+                            
+                            </section>    
+                        
+                        
+                        </div>    
+
+
+                        
+                        <div class="teams_container" id="right_side">
+
+                            <!--NFC west-->
+                            <section>
+                                <div class="conference"><h3>NFC West</h3></div>
+                                
+                                <div id="nfc_west">
+                                    <div class="team_items nfl_teams west">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/Arizona-Cardinals.png" alt="Arizona-Cardinals">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Arizona Cardinals</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="team_items nfl_teams west">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/Los-Angeles-Rams.png" alt="Los-Angeles-Rams">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Los Angeles Rams</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="team_items nfl_teams west">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/San-Francisco-49ers.png" alt="San-Francisco-49ers">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">San Francisco 49ers</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                        
+                                    </div>
+
+                                    <div class="team_items nfl_teams west">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/Seattle-Seahawks.png" alt="Seattle-Seahawks">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Seattle Seahawks</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                </div>
+
+                            </section>
+
+
+                            <!--NFC East-->
+                            <section>
+                                <div class="conference"><h3>NFC East</h3></div>
+                                
+                                <div id="nfc_east">
+                                
+                                    <div class="team_items nfl_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/Dallas-Cowboys.png" alt="Dallas-Cowboys">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Dallas Cowboys</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="team_items nfl_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/New-York-Giants.png" alt="New-York-Giants">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">New-York-Giants</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="team_items nfl_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/Philadelphia-Eagles.png" alt="Philadelphia-Eagles">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Philadelphia Eagles</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Fixtures</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="team_items nfl_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/Washington-Redskins.png" alt="Washington-Redskins">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Washington-Redskins</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                
+                                </div>
+
+
+
+                            </section>
+
+
+                            <!--NFC North-->
+                            <section>
+                                
+                                <div class="conference"><h3>NFC North</h3></div>
+                                
+                                <div id="nfc_north">
+                                
+                                    <div class="team_items nfl_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/Chicago-Bears.png" alt="Chicago-Bears">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Chicago Bears</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="team_items nfl_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/Detroit-Lions.png" alt="Detroit-Lions">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Detroit Lions</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="team_items nfl_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/Green-Bay-Packers.png" alt="Green-Bay-Packers">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Green Bay Packers</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="team_items nfl_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/Minnesota-Vikings.png" alt="Minnesota-Vikings">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Minnesota-Vikings</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                </div>
+
+
+                            </section>
+
+                            <!---NFC South-->
+                            <section>
+                                <div class="conference"><h3>NFC South</h3></div>
+                                
+                                <div id="nfc_south">
+                                
+                                    <div class="team_items nfl_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/Atlanta-Falcons.png" alt="Atlanta-Falcons">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Atlanta Falcons</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="team_items nfl_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/Carolina-Panthers.png" alt="Carolina-Panthers">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Carolina Panthers</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="team_items nfl_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/New-Orleans-Saints.png" alt="New-Orleans-Saints">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">New Orleans Saints</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="team_items nfl_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/Tampa-Bay-Buccaneers.png" alt="Tampa-Bay-Buccaneers">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Tampa Bay Buccaneers</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                </div>
+
+
+                            </section>
+                        </div>
+
+                    </div>
+                </div>
+
+                
+                
+                <div id="ncaaf_teams_container" style="display: none;">
+                    <section id="ncaaf_teams">
+                        <h2 id="league">NCAAF teams</h2>
+                        <select name="ncaaf_conference" id="ncaaf_conference">
+                            <optgroup>
+                                <option selected disabled>Choose Conference</option>
+                                <option value="all">All Conference</option>
+                                <option value="aac">American Athletic Conference</option>
+                                <option value="acc">Atlantic Coast Conference</option>
+                                <option value="big10">Big Ten</option>
+                                <option value="big12">Big Twelve</option>
+                                <option value="cusa">Conference USA</option>
+                                <option value="fbs">FBS Independents</option>
+                                <option value="mac">Mid-American</option>
+                                <option value="mw">Mountain West</option>
+                                <option value="pac12">Pac-12</Pac-12></option>
+                                <option value="sec">SEC</option>
+                                <option value="sunbelt">Sun Belt</option>
+                                
+                            </optgroup>
+                        </select>
+                    </section>
+                    
+                   
+                    <div class="teams_flex_container teams_mobile_container" id="all_conference">
+                        
+                        <div class="teams_container1" id="left_side">
+                            <!--aac-->
+                            <section class="aac">
+                                <div class="conference">
+                                    <h3>American Athletic Conference</h3>
+                                    <div class="conference_logo"><img src="img/football/NCAAF/aac/American_Athletic_Conference_logo.png" alt="aac"></div>
+
+                                </div>
+
+                                <div id="aac">
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/aac/Cincinnati_Bearcats.png" alt="Cincinnati_Bearcats" width="35">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Cincinnati Bearcats</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/aac/east_carolina_pirates.png" alt="East Carolina Pirates">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">East Carolina Pirates</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                    
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/aac/Houston_Cougars_logo.svg" alt="Houston_Cougars" width="30">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Houston Cougars</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/aac/memphis_tigers.png" alt="Memphis_Tigers">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Memphis Tigers</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/aac/Navy_Athletics.png" alt="Navy_Midshipmen">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Navy Midshipmen</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/aac/smu_mustangs.png" alt="SMU_Mustangs">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">SMU Mustangs</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/aac/south_florida_bulls.png" alt="South_Florida_Bulls">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">South Florida Bulls</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/aac/temple_owls.png" alt="Temple_Owls">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Temple Owls</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/aac/tulane_green_wave.png" alt="Tulane_Green_Wave">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Tulane Green Wave</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/aac/tulsa_golden_hurricane.png" alt="Tulsa_Golden_Hurricane">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Tulsa Golden Hurricane</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/aac/UCF Knights.png" alt="UCF_Knights">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">UCF Knights</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/aac/connecticut_huskies.png" alt="UConn_Huskies">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">UConn Huskies</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                
+                                </div>
+                                
+                            </section>
+                            <!--aac-->
+
+                            <!--acc-->
+                            <section class="acc">
+                                <div class="conference">
+                                    <h3>Atlantic Coast Conference</h3>
+                                    <div class="conference_logo"><img src="img/football/NCAAF/acc/Atlantic_Coast_Conference_logo.png" alt="acc"></div>
+
+                                </div>
+
+                                <div id="acc">
+                                
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/acc/boston_college_eagles.png" alt="Boston College Eagles">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Boston College Eagles</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/acc/clemson_tigers.png" alt="Clemson_Tigers">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Clemson Tigers</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/acc/duke_blue_devils.png" alt="Duke_Blue_Devils">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Duke Blue Devils</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/acc/florida_state_seminoles.png" alt="Florida_State_Seminoles">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Florida State Seminoles</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/acc/georgia-tech.png" alt="Georgia_Tech_Yellow_Jackets">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Georgia Tech Yellow Jackets</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/acc/louisville_cardinals.png" alt="Louisville_Cardinals">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Louisville Cardinals</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/acc/miami_hurricanes.png" alt="Miami_Hurricanes">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Miami Hurricanes</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/acc/north_carolina_state_wolfpack.png" alt="NC_State_Wolfpack">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">NC State Wolfpack</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/acc/north_carolina_tar_heels.png" alt="North_Carolina_Tar_Heels">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">North Carolina Tar Heels</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/acc/pittsburgh_panthers.png" alt="Pittsburgh_Panthers">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Pittsburgh Panthers</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/acc/syracuse_orange.png" alt="Syracuse_Orange">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Syracuse Orange</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/acc/virginia-cavaliers.png" alt="Virginia_Cavaliers">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Virginia Cavaliers</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/acc/virginia_tech_hokies.png" alt="Virginia_Tech_Hokies">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Virginia Tech Hokies</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/acc/wake_forest_demon_deacons.png" alt="Wake_Forest_Demon_Deacons">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Wake Forest Demon Deacons</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                </div>
+
+                            </section>
+                            <!--acc-->
+
+                            <!--Big Ten-->
+                            <section class="big10">
+                                <div class="conference">
+                                    <h3>Big Ten</h3>
+                                    <div class="conference_logo"><img src="img/football/NCAAF/big10/big-ten-logo.png" alt="bigten"></div>
+
+                                </div>
+
+                                <div id="big10">
+                                
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/big10/illinois_fighting.png" alt="Illinois_Fighting_Illini">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Illinois Fighting Illini</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/big10/indiana_hoosiers.png" alt="Indiana_Hoosiers">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Indiana Hoosiers</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/big10/iowa_hawkeyes.png" alt="Iowa_Hawkeyes">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Iowa Hawkeyes</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/big10/maryland_terrapins.png" alt="MarylandTerrapins">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Maryland Terrapins</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/big10/michigan_state_spartans.png" alt="MichiganStateSpartans">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Michigan State Spartans</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/big10/michigan_wolverines.png" alt="MichiganWolverines">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Michigan Wolverines</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/big10/minnesota_golden_gophers.png" alt="MinnesotaGoldenGophers">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Minnesota Golden Gophers</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/big10/nebraska_cornhuskers.png" alt="NebraskaCornhuskers">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Nebraska Cornhuskers</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/big10/northwestern_wildcats.png" alt="NorthwesternWildcats">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Northwestern Wildcats</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/big10/ohio_state_buckeyes.png" alt="OhioStateBuckeyes">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Ohio State Buckeyes</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/big10/penn_state_nittany_lions.png" alt="PennStateNittanyLions">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Penn State Nittany Lions</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/big10/purdue_boilermakers.png" alt="PurdueBoilermakers">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Purdue Boilermakers</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/big10/rutgers_scarlet_knights.png" alt="RutgersScarletKnights">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Rutgers Scarlet Knights</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/big10/wisconsin_badgers.png" alt="WisconsinBadgers">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Wisconsin Badgers</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                </div>
+
+                            </section>
+                            <!--Big Ten-->
+
+                            <!--big 12-->
+                            <section class="big12">
+                                <div class="conference">
+                                    <h3>Big Twelve</h3>
+                                    <div class="conference_logo"><img src="img/football/NCAAF/big12/Big_12_Conference_logo.png" alt="big12"></div>
+
+                                </div>
+
+                                <div id="big12">
+                                
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/big12/baylor_bears.png" alt="BaylorBears">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Baylor Bears</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/big12/iowa_state_cyclones.png" alt="IowaStateCyclones">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Iowa State Cyclones</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/big12/kansas_jayhawks.png" alt="KansasJayhawks">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Kansas Jayhawks</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                    
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/big12/kansas_state_wildcats.png" alt="KansasStateWildcats">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Kansas State Wildcats</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/big12/oklahoma_sooners.png" alt="OklahomaSooners">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Oklahoma Sooners</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/big12/oklahoma_state_cowboys.png" alt="OklahomaStateCowboys">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Oklahoma State Cowboys</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/big12/tcu_horned_frogs.png" alt="TCUHornedFrogs">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">TCU Horned Frogs</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/big12/texas_longhorns.png" alt="TexasLonghorns">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Texas Longhorns</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/big12/texas_tech_red_raiders.png" alt="TexasTechRedRaiders">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Texas Tech Red Raiders</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/big12/west_virginia_mountaineers.png" alt="WestVirginiaMountaineers">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">West Virginia Mountaineers</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                </div>
+
+                            </section>
+                            <!--big 12-->
+
+
+                        </div>
+
+
+                        <div class="teams_container1" id="middle">
+                            
+                            <!--cusa-->
+                            <section class="cusa">
+                                <div class="conference">
+                                    <h3>Conference USA</h3>
+                                    <div class="conference_logo"><img src="img/football/NCAAF/c-usa/Conference_USA_logo.png" alt="c-usa"></div>
+
+                                </div>
+                                
+                                <div id="cusa">
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/c-usa/charlotte_49ers.png" alt="Charlotte49ers">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Charlotte 49ers</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/c-usa/florida_atlantic_owls.png" alt="FloridaAtlanticOwls">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Florida Atlantic Owls</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/c-usa/fiu_panthers.png" alt="FloridaInternationalPanthers">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Florida International Panthers</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/c-usa/louisiana_tech_bulldogs.png" alt="LouisianaTechBulldogs">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Louisiana Tech Bulldogs</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/c-usa/Marshall_Thundering_Herd.svg" alt="MarshallThunderingHerd">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Marshall Thundering Herd</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/c-usa/middle_tennessee_blue_raiders.png" alt="MiddleTennesseeBlueRaiders">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Middle Tennessee Blue Raiders</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/c-usa/North_Texas_Mean_Green_logo.svg" alt="NorthTexasMeanGreen" width="30">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">North Texas Mean Green</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/c-usa/old-dominion-university-monarchs.png" alt="OldDominionMonarchs">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Old Dominion Monarchs</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/c-usa/rice_owls.png" alt="RiceOwls">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Rice Owls</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/c-usa/Southern_Miss_Athletics_logo.svg" alt="SouthernMississippiGoldenEagles">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Southern Mississippi Golden Eagles</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/c-usa/UAB_Blazers_logo.svg" alt="UABBlazers">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">UAB Blazers</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/c-usa/utep-miners-logo.png" alt="UTEPMiners">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">UTEP Miners</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/c-usa/utsa_roadrunners.png" alt="UTSARoadrunners">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">UTSA Roadrunners</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/c-usa/western_kentucky_hilltoppers.png" alt="WesternKentuckyHilltoppers">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Western Kentucky Hilltoppers</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                </div>
+
+                            </section>
+                            <!--cusa-->
+
+                            <!--fbs-->
+                            <section class="fbs"> 
+                                <div class="conference">
+                                    <h3>FBS Independents</h3> 
+                                    <div class="conference_logo"><img src="img/football/NCAAF/FBS/FBS_independent_schools_logo.png" alt="Independents"></div>
+
+                                </div>
+                                    
+                                <div id="fbs">
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/fbs/Army_West_Point_logo.svg" alt="ArmyBlackKnights" width="30">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Army Black Knights</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/fbs/BYU_Cougars_logo.svg" alt="BYUCougars">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">BYU Cougars</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/fbs/liberty-primary-logo.png" alt="LibertyFlames">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Liberty Flames</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/fbs/new-mexico-state-.png" alt="NewMexicoStateAggies">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">New Mexico State Aggies</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/fbs/notre_dame_fighting_irish.png" alt="NotreDameFightingIrish">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Notre Dame Fighting Irish</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/fbs/UMass_Amherst_Athletics_logo.svg" alt="UMassMinutemen">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">UMass Minutemen</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                </div>
+
+                            </section>
+
+                            <!--fbs-->
+
+                            
+                            <!--mac-->
+                            <section class="mac">
+                                <div class="conference">
+                                    <h3>Mid-American</h3>
+                                    <div class="conference_logo"><img src="img/football/NCAAF/mac/Mid-American_Conference_logo.png" alt="Mid-American"></div>
+
+                                </div>
+
+                                <div id="mac">
+                                
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/mac/akron_zips.png" alt="AkronZips">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Akron Zips</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/mac/ball_state_cardinals.png" alt="BallStateCardinals">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Ball State Cardinals</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/mac/bowling_green_falcons.png" alt="BowlingGreenFalcons">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Bowling Green Falcons</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/mac/buffalo-bulls.png" alt="BuffaloBulls">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Buffalo Bulls</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/mac/central_michigan_chippewas.png" alt="CentralMichiganChippewas">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Central Michigan Chippewas</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/mac/eastern_michigan_eagles.png" alt="EasternMichiganEagles">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Eastern Michigan Eagles</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/mac/kent_state_golden_flashes.png" alt="KentStateGoldenFlashes">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Kent State Golden Flashes</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/mac/miami_ohio_redhawks.png" alt="Miami(OH)RedHawks">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Miami (OH) RedHawks</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/mac/northern_illinois_huskies.png" alt=" NorthernIllinoisHuskies">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Northern Illinois Huskies</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/mac/kent-state-university-ohio-bobcats.png" alt="Ohio Bobcats" width="60">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Ohio Bobcats</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/mac/toledo_rockets.png" alt="ToledoRockets">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Toledo Rockets</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/mac/western_michigan_broncos.png" alt="WesternMichiganBroncos">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Western Michigan Broncos</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                </div>
+
+                            </section>
+
+                            <!--mac-->
+
+                            <!--mw-->
+                            <section class="mw">
+                                
+                                <div class="conference">
+                                    <h3>Mountain West</h3>
+                                    <div class="conference_logo"><img src="img/football/NCAAF/mw/MW-Logo.png" alt="mountainwest" width="10"></div>
+
+                                </div>
+
+                                <div id="mw">
+                                
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/mw/air_force_falcons.png" alt="AirForceFalcons">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Air Force Falcons</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/mw/boise_state_broncos.png" alt="BoiseStateBroncos">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Boise State Broncos</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/mw/colorado_state_rams.png" alt="ColoradoStateRams">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Colorado State Rams</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/mw/fresno_state_bulldogs.png" alt="FresnoStateBulldogs">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Fresno State Bulldogs</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/mw/Hawaii_Warriors_logo.svg" alt="Hawaii Rainbow Warriors">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Hawaii Rainbow Warriors</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/mw/nevada_wolf_pack.png" alt="NevadaWolfPack">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Nevada Wolf Pack</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/mw/new_mexico-lobos.png" alt="NewMexicoLobos">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">New Mexico Lobos</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/mw/san_diego_state_aztecs.png" alt="SanDiegoStateAztecs">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">San Diego State Aztecs</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/mw/san_jose_state_spartans.png" alt="SanJoseStateSpartans">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">San Jose State Spartans</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/mw/unlv_rebels.png" alt="UNLVRebels">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">UNLV Rebels</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/mw/Utah_State_Aggies_logo.svg" alt="UtahStateAggies">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Utah State Aggies</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/mw/wyoming_cowboys.png" alt="WyomingCowboys">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Wyoming Cowboys</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                </div>    
+
+                            </section>
+
+                            <!--mw-->
+
+                        </div>
+
+                        <div class="teams_container1" id="right_side">
+
+                            <!--Pac-12-->
+                            <section class="pac12">
+                                <div class="conference">
+                                    <h3>Pac-12</h3>
+                                    <div class="conference_logo"><img src="img/football/NCAAF/pac12/Pac-12_logo.png" alt="pac12"></div>
+
+                                </div>
+                                
+
+                                <div id="pac12">
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/pac12/arizona_state_sun_devils.png" alt="ArizonaStateSunDevils">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Arizona State Sun Devils</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/pac12/arizona_wildcats.png" alt="ArizonaWildcats">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Arizona Wildcats</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/pac12/california_golden_bears.png" alt="CaliforniaGoldenBears">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">California Golden Bears</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/pac12/colorado_buffaloes.png" alt="ColoradoBuffaloes">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Colorado Buffaloes</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/pac12/oregon_ducks.png" alt="OregonDucks">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Oregon Ducks</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/pac12/oregon_state_beavers.png" alt="OregonStateBeavers">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Oregon State Beavers</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/pac12/stanford_cardinal.png" alt="StanfordCardinal">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Stanford Cardinal</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/pac12/ucla_bruins.png" alt="UCLABruins">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">UCLA Bruins</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/pac12/southern_california_trojans.png" alt="USC Trojans">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">USC Trojans</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/pac12/utah_utes.png" alt="UtahUtes">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Utah Utes</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/pac12/washington_huskies.png" alt="WashingtonHuskies">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Washington Huskies</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/pac12/washington_state_cougars.png" alt="WashingtonStateCougars">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Washington State Cougars</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                </div>
+
+                            </section>
+
+                            <!--Pac-12-->
+
+                            <!--sec-->
+
+                            <section class="sec">
+                                <div class="conference">
+                                    <h3>SEC</h3>
+                                    <div class="conference_logo"><img src="img/football/NCAAF/sec/Southeastern_Conference_logo.png" alt="sec"></div>
+
+                                </div>
+
+                                <div id="sec">
+                                
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/sec/alabama_crimson_tide.png" alt="AlabamaCrimsonTide">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Alabama Crimson Tide</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/sec/arkansas_razorbacks.png" alt="ArkansasRazorbacks">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Arkansas Razorbacks</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/sec/auburn_tigers.png" alt="AuburnTigers">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Auburn Tigers</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/sec/florida_gators.png" alt="FloridaGators">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Florida Gators</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/sec/georgia_bulldogs.png" alt="GeorgiaBulldogs">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Georgia Bulldogs</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/sec/kentucky_wildcats.png" alt="KentuckyWildcats">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Kentucky Wildcats</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/sec/lsu_tigers.png" alt="LSUTigers">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">LSU Tigers</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/sec/mississippi_state_bulldogs.png" alt="MississippiStateBulldogs">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Mississippi State Bulldogs</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/sec/missouri_tigers.png" alt="MissouriTigers">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Missouri Tigers</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/sec/ole miss.png" alt="OleMissRebels">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Ole Miss Rebels</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/sec/south_carolina_gamecocks.png" alt="South Carolina Gamecocks">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">South Carolina Gamecocks</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/sec/tennessee_volunteers.png" alt="TennesseeVolunteers">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Tennessee Volunteers</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/sec/texas_am_aggies.png" alt="TexasA&MAggies">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Texas A&M Aggies</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/sec/vanderbilt_commodores.png" alt="VanderbiltCommodores">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Vanderbilt Commodores</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                </div>
+
+                            </section>
+                            <!--sec-->
+
+
+                            <!--sun belt-->
+
+                            <section class="sunbelt">
+                                <div class="conference">
+                                    <h3>Sun Belt</h3>
+                                    <div class="conference_logo"><img src="img/football/NCAAF/sunBelt/Sun_Belt_Conference_logo.png" alt="sunBelt"></div>
+
+                                </div>
+
+                                <div id="sunbelt">
+                                
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/sunBelt/appalachian_state_mountaineers.png" alt="AppalachianStateMountaineers">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Appalachian State Mountaineers</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/sunBelt/arkansas_state_red_wolves.png" alt="ArkansasStateRedWolves">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Arkansas State Red Wolves</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/sunBelt/coastal_carolina_chanticleers.png" alt="CoastalCarolinaChanticleers">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Coastal Carolina Chanticleers</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/sunBelt/georgia_southern_eagles.png" alt="GeorgiaSouthernEagles">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Georgia Southern Eagless</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/sunBelt/georgia_state_panthers.png" alt="GeorgiaStatePanthers">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Georgia State Panthers</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/sunBelt/louisiana cajuns.png" alt="LouisianaRaginCajuns">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Louisiana Ragin' Cajuns</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/sunBelt/south_alabama_jaguars.png" alt="SouthAlabamaJaguars">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">South Alabama Jaguars</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/sunBelt/texas_state_bobcats.png" alt="TexasStateBobcats">
+                                            </a>
+                                        </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Texas State Bobcats</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/sunBelt/Troy_Trojans_logo.svg" alt="TroyTrojans">                               </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">Troy Trojans</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="team_items ncaaf_teams">
+                                        <div class="teams_logo2">
+                                            <a href="#">
+                                                <img src="img/football/NCAAF/sunBelt/louisiana_monroe_warhawks.png" alt="ULMonroeWarhawks">                               </div>
+
+                                        <div class="teams_property">
+                                            <div class="club_name"><a href="#">UL Monroe Warhawks</a></div>
+                                            <div class="club_standings">
+                                                <div class="fixtures"><a href="#">Schedule</a></div>
+                                                <div class="results"><a href="#">Results</a></div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                </div>
+
+                            </section>
+
+                            <!--sun belt-->
+                        </div>
+
+
+
+                    </div>
+                </div>
+           
+            </div>
+
+
+            
+            
+            <div id="footer_container">
+                <div id="footer_flex_container">
+                    <div class="footer"><a href="#">Sport teams</a></div>
+                    <div class="footer"><a href="#">Sport Fans</a></div>
+                    <div class="footer"><a href="#">Accessibility</a></div>
+                </div>
+                <div id="footer_icons">
+                    
+                    <div class="footer-icons">
+                        <a href="#">
+                            <img src="img/icons/facebook.png" alt="facebook_icon">
+                        </a>
+                    </div>
+                    
+                    <div class="footer-icons">
+                        <a href="#">
+                            <img src="img/icons/instagram.png" alt="instagram_icon">
+                        </a>
+                    </div>
+                    
+                    <div class="footer-icons">
+                        <a href="#">
+                            <img src="img/icons/linkedIn.png" alt="linkedIn_icon">
+                        </a>
+                    </div>
+                    
+                    <div class="footer-icons">
+                        <a href="#">
+                            <img src="img/icons/twitter.png" alt="twitter_icon">
+                        </a>
+                    </div>
+                </div>
+    
+            </div>
+
+            <!--The color scheme is triadic(blue, white and black).-->
+            <!--After doing research on sport websites like bleacherreport, Espn and some googling, 
+                i decided to go with th aforementioned choice of colors -->
+
+    
+                
+                <script src="js/football.js">
+                
+                </script>
+    </body>
+</html>

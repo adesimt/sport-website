@@ -1,0 +1,296 @@
+#teams{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 20px;
+    
+    
+}
+#teams_head{
+    
+    width: 100%;
+    height: auto;
+    display: flex;
+   
+}
+
+#soccer_image{
+    width: 3.3vw;
+    padding-left: 5px;
+}
+#soccer_image img{
+    width: 70%;
+}
+
+#sport{
+    width: 19.5vw;
+    font-size: 2em;
+    font-weight: 800;
+    line-height: 1em;
+    text-align: left;
+    color: #021c1e;
+    margin-left: 5px;
+      
+}
+
+#teams_head .active{
+    color: #081F2C;
+    background: #EAE5DA;
+    border: 1px solid #EAE5DA;
+}
+
+.league_options{
+    border-radius: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 0.8em;
+    margin-bottom: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #081F2C;
+    border: 1px solid #081F2C;  
+}
+#european{
+    width: 7.8vw;
+    height: 6vh;
+    padding: 10px 5px 5px 5px;    
+    position: absolute;
+    right: 17.5%;
+      
+}
+#mls{
+    width: 5vw;
+    height: 6vh;
+    position: absolute;
+    right: 12%;
+    padding: 10px 2px 2px 2px;
+    
+}
+
+
+#league_options1{
+    width:  6vw;
+    height: 6vh;
+    position: absolute;
+    right: 20%;
+    margin-right: 5px;
+    padding: 10px 2px 2px 2px;
+    
+}
+
+#league_options2{
+    width:  8vw;
+    height: 6vh;
+    position: absolute;
+    right: 12%;
+    padding: 10px 2px 2px 2px;
+    margin-left: 3px;
+    
+}
+
+
+#ncaaf_teams{
+    display: flex;
+    
+}
+
+h2{
+    width: 40%;
+    height: 5vh;
+    font-size: 1em;
+    font-weight: 800;
+    line-height: 1em;
+    text-align: left;
+    color: #021c1e;
+    margin: 10px 0px 5px 5px;
+    padding: 10px 0px 3px 0px;
+    
+}
+#ncaaf_conference{
+    height: 5vh;
+    border: 1px solid #EAE5DA;
+    margin: 30px 0px 5px 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #EAE5DA;
+    color: #081F2C;
+    
+}
+#ncaaf_conference optgroup{
+    background-color: #081F2C;
+    color: #ffffff;
+}
+
+#ncaaf_conference:focus{
+    border: 1px solid rgb(26, 80, 110);
+    
+}
+
+#ncaaf_conference option{
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+
+#league{
+    margin-top: 2em;
+}
+
+.conference{
+    display: flex;
+    width: 90%;
+    height: 5vh;
+    margin: 20px 0px 10px 5px;
+    padding: 5px 0px 3px 0px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(155, 155, 151);
+}
+
+
+h3{
+    padding-top: 5px;
+    width: 80%;
+    font-size: 0.8em;
+    font-weight: 800;
+    line-height: 1em;
+    text-align: left;
+    color: #021c1e;
+       
+}
+
+.conference .conference_logo{
+    width: 10%;
+    margin-left: 2em;
+}
+
+.conference .conference_logo img{
+    width: 90%;
+}
+
+.teams_flex_container{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    
+}
+.teams_container{
+    width: 50%;
+    height: 100%;
+    
+
+}
+
+.teams_container1{
+    width: 33%;
+    height: 100%;
+    position: relative;
+}
+
+
+
+#right_side{
+    padding-left: 5px;
+}
+
+.team_items{
+    width: 100%;
+    height: 7.5vh;
+    display: flex;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 5px;
+}
+.mls_teams, .nfl_teams{
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+
+
+.teams_logo{
+    width: 2.6vw;
+    height: 100%;
+    padding-top: 5px;
+}
+
+.teams_logo a img{
+    max-width: 70%;
+}
+
+.teams_logo2{
+    width: 3.2vw;
+    height: 100%;
+    padding-top: 5px;
+}
+
+.teams_logo2 a img{
+    max-width: 90%;
+}
+
+.teams_property{
+    width: 26vw;
+    height: 100%;
+    margin-left: 5px;
+}
+.club_name{
+    width: 100%;
+    height: 48%;
+    display: block;   
+}
+.club_name a{
+    text-decoration: none;
+    color: #151515;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 21px;
+}
+.club_name a:hover{
+    text-decoration: underline;
+}
+.club_standings{
+    width: 100%;
+    height: 48%;
+    display: block;
+    font-size: 0.8em;
+    
+    
+}
+
+.fixtures{
+    display: inline-block;
+    width: 4.5em;
+}
+.fixtures a{
+    text-decoration: none;
+    color: rgb(16, 125, 235);
+    font-weight: 400;
+    line-height: 13px;
+}
+.fixtures a:hover{
+    text-decoration: underline;
+}
+
+.results{
+    display: inline-block;
+    padding-left: 2px;
+}
+.results a{    
+    text-decoration: none;
+    color: rgb(16, 125, 235);
+    font-weight: 400;
+    line-height: 13px;
+}
+.results a:hover{
+    text-decoration: underline;
+}
+
+.allanimate{
+    background-color: #E9EBEC;
+    transition: ease-in 2s;
+}
+
